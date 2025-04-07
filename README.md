@@ -1,8 +1,8 @@
-# 🏡 Global-Housing-Market-Analysis (2015 - 2024)
-💾 Data Processing: MySQL | 
+# 🏡 Global-Housing-Market-Analysis & Forecasting (2015 - 2024)
+💾 Data Processing: MySQL & Python | 📊 **ML Models**: Linear Regression & LSTM 
 
 ## 🔗 Source: Kaggle Dataset
-Global Housing Market Dataset  
+This project is based on the **Global Housing Market Dataset**, analyzing **house price indices, affordability trends, mortgage rates, inflation, and population growth** from **2015 to 2024**.  
 [🔗 Kaggle Dataset](https://www.kaggle.com/datasets/atharvasoundankar/global-housing-market-analysis-2015-2024)  
 
 ## 📑 Dataset Overview  
@@ -23,9 +23,18 @@ This dataset provides insights into the **global housing market**, covering econ
 ---
 
 ## 📖 Introduction  
-Housing markets fluctuate based on **economic stability, mortgage rates, urban development, and inflation trends**. This analysis helps **investors, policymakers, and researchers** make data-driven decisions by applying **SQL-based business analytics** to identify patterns, crisis periods, and future market predictions.
+Housing markets fluctuate based on **economic stability, mortgage rates, urban development, and inflation trends**.  
+This analysis helps **investors, policymakers, and researchers** make data-driven decisions by applying **SQL-based business analytics** and **Python-driven machine learning models** to identify patterns, detect crisis periods, and forecast future market trends.
+
+This project leverages:  
+✅ **SQL queries** for structured economic analysis.   
+✅ **Python-based data processing & visualization** for deep insights.  
+✅ **Machine learning (Linear Regression & LSTM)** for predictive modeling.  
 
 ---
+## 📖 Business Insights & Predictive Analytics  
+Housing markets fluctuate due to **economic stability, mortgage rates, urban development, and inflation trends**.  
+This project applies **SQL-based business analytics & machine learning forecasting** to predict future housing prices.  
 
 ## 📊 SQL-Based Business Analytics (MySQL) 
 
@@ -70,46 +79,115 @@ This section focuses on data extraction, transformation, and analysis using SQL 
 | **Cumulative GDP Growth Over Time**       | Analyzes cumulative GDP growth by country |
 | **Comparing Housing Affordability by Mortgage Rate**  | Segments mortgage rates into **quartiles** for affordability analysis |
 
+
+## 🏗 Python: Data Visualization  
+This project includes **graphical insights** showcasing market trends and correlations:
+
+- 📈 **Housing Price Index Over Time**  
+- 🔥 **Feature Correlation Heatmap**
+- 🏦 **Distribution of Mortgage Rates by Country**
+- 💰 **Housing Affordability vs Inflation Trends**  
+- 📊 **Population Growth vs Urbanization Rate**  
+- 🌍 **Top 5 Countries with Highest Housing Price Growth**
+- 🔮 **Housing Price Index Forecast for Top Growing Countries**  
+All visualizations are built using **Matplotlib** and **Seaborn**.
 ---
 
 ## 📊 Expected Outcomes & Insights  
-✔ **Identify Housing Price Trends** → Determine whether prices are increasing or declining per region.  
-✔ **Economic Crisis Detection** → Spot years with **high inflation** and **low GDP growth** using SQL analytics.  
-✔ **Market Volatility Analysis** → Understand **which countries** experience sharp fluctuations in **house prices**.  
-✔ **Urbanization Impact on Rent Affordability** → Explore how population shifts impact **rental markets**.  
-✔ **Future Price Forecasting** → Predict upcoming trends using **moving averages** and **statistical analysis**.  
+
+✔ **Identify Housing Price Trends** → Analyze **YoY percentage changes** using SQL queries & **time-series visualization** in Python.  
+✔ **Economic Crisis Detection** → Detect **years with high inflation & GDP decline** using SQL analytics and **feature correlation heatmaps**.  
+✔ **Market Volatility Analysis** → Evaluate **sharp price fluctuations** in housing markets using **standard deviation calculations (SQL)** & **box plots (Python)**.  
+✔ **Urbanization Impact on Rent Affordability** → Assess **population shifts & rental markets** via SQL segmentation & Python-based **scatter plots and regression models**.  
+✔ **Feature Importance for Housing Prices** → Determine **key economic factors** impacting house prices using **SQL queries** and **linear regression models (Python)**.  
+✔ **Future Price Forecasting** → Use **moving averages & LSTM deep learning models** in Python for **multi-year housing price projections**.   
 
 ---
 
 ## 🛠 Technologies Used 
 
-✅ **SQL (MySQL/PostgreSQL)** → Querying & business intelligence  
+### Programming & Query Languages  
+✅ **Python** → Data processing, visualization & machine learning  
+✅ **SQL (MySQL/PostgreSQL)** → Business intelligence & market trend analysis  
+
+### Libraries Used  
+✔ **Pandas** → Data manipulation  
+✔ **NumPy** → Numerical operations  
+✔ **Matplotlib & Seaborn** → Visualization  
+✔ **Scikit-learn** → Machine learning (Linear Regression)   
+✔ **TensorFlow & Keras** → Deep learning (LSTM forecasting) 
 
 ---
 
 ## 🏆 How to Use This Analysis 
 
-### 1️⃣ Clone the Repository  
+### 🏢 SQL-Based Queries (MySQL)  
 
-**git clone https://github.com/RaiSudeep/Global-Housing-Market-Analysis.git**  
-**cd Global-Housing-Market-Analysis**  
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/RaiSudeep/Global-Housing-Market-Analysis.git 
+cd Global-Housing-Market-Analysis
+```
 
 ### 2️⃣ Set Up Database & Clean Data
 **First, create the database schema and import the datasets:**  
-**SOURCE queries/schema_setup.sql;**  
+```bash
+SOURCE queries/schema_setup.sql;
+```
 
 ### 3️⃣ Run SQL Queries
 **After setting up the database, execute analysis queries:**  
-
-sql
-**-- Example: Running Basic KPIs Query**  
-**USE global_housing_market_analysis;**  
-**SOURCE queries/Basic_KPIs.sql;**  
+```bash
+-- Example: Running Basic KPIs Query  
+USE global_housing_market_analysis;  
+SOURCE queries/Basic_KPIs.sql;
+```
 
 ### 4️⃣ Analyze Insights
 **📊 Review Schema & Data Cleaning (queries/schema_setup.sql)**  
 **📉 Explore Basic KPIs (queries/Basic_KPIs.sql)**  
 **📈 Deep-dive into Intermediate & Advanced KPIs (queries/Intermediate_KPIs.sql, queries/Advanced_KPIs.sql)**  
+
+### 🧑‍💻 Python-Based Data Processing & Visualization  
+
+### 1️⃣ Run Python-Based Data Analysis Scripts 
+```sh
+python data_analysis.py  
+```
+### 2️⃣ Forecast Housing Prices for Future Years
+```sh
+python lstm_forecasting.py  
+```
+---
+
+## 🖼 Images / Data Visualizations  
+### 1️⃣ Housing Price Index Over Time
+![image](https://github.com/user-attachments/assets/0355ba57-9632-4fe7-91c9-5077329c736b)
+
+### 2️⃣ Feature Correlation Heatmap
+![image](https://github.com/user-attachments/assets/fc069d89-7bb6-47d1-a343-4153d992faa0)
+
+### 3️⃣ Distribution of Mortgage Rates by Country
+![image](https://github.com/user-attachments/assets/53b28955-2d44-46f1-a169-94756887212c)
+
+### 4️⃣ Housing Affordability vs Inflation Rate
+![image](https://github.com/user-attachments/assets/d8f918f2-4556-476e-9aad-762200219ba4)
+
+### 5️⃣ Population Growth vs Urbanization Rate
+![image](https://github.com/user-attachments/assets/e4eb3a8b-77f3-48e6-a224-2eee60c8b755)
+
+### 6️⃣ Top 5 Countries with Highest Price Growth
+![image](https://github.com/user-attachments/assets/53b1afec-a1c2-498e-9890-0eb3526ed622)
+
+### 7️⃣ Forecasting Future Housing Price Index (2026–2030)
+![image](https://github.com/user-attachments/assets/b0fedf7c-c4dc-484d-ace6-8b1a36ce751f)
+
+
+### Using LSTM - based deep learning model:
+### Predicted Australia's Housing Price Index for 2026–2030:
+![image](https://github.com/user-attachments/assets/b0ea6c19-8642-4a56-acb7-8d45ca3dfa36)
+
+
 
 ---
 
@@ -117,4 +195,5 @@ sql
 For any questions or collaboration, feel free to reach out:  
 📧 **Email:** sudiprai969@gmail.com  
 🔗 **LinkedIn:** [Sudeep Rai](https://www.linkedin.com/in/sudeep-rai-78022b18b/)  
+
 ---
