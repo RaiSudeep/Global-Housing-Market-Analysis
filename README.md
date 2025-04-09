@@ -89,8 +89,10 @@ This project includes **graphical insights** showcasing market trends and correl
 - 💰 **Housing Affordability vs Inflation Trends**  
 - 📊 **Population Growth vs Urbanization Rate**  
 - 🌍 **Top 5 Countries with Highest Housing Price Growth**
-- 🔮 **Housing Price Index Forecast for Top Growing Countries**  
+- 🔮 **Housing Price Index Forecast for Top Growing Countries**
+ 
 All visualizations are built using **Matplotlib** and **Seaborn**.
+
 ---
 
 ## 📊 Expected Outcomes & Insights  
@@ -150,14 +152,25 @@ SOURCE queries/Basic_KPIs.sql;
 
 ### 🧑‍💻 Python-Based Data Processing & Visualization  
 
-### 1️⃣ Run Python-Based Data Analysis Scripts 
-```sh
-python data_analysis.py  
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/RaiSudeep/Global-Housing-Market-Analysis.git 
+cd Global-Housing-Market-Analysis
 ```
-### 2️⃣ Forecast Housing Prices for Future Years
+### 2️⃣ Install Dependencies  
 ```sh
-python lstm_forecasting.py  
+pip install -r requirements.txt
 ```
+
+### 3️⃣ Open Jupyter Notebook Launch Jupyter Notebook:
+```sh
+jupyter notebook
+```
+
+### 4️⃣ Run Notebooks  
+**📊 Open data_analysis.ipynb for data cleaning, visualization, and insights.**  
+**📈 Open ml_forecasting.ipynb to train models and forecast housing prices.**  
+
 ---
 
 ## 🖼 Images / Data Visualizations  
@@ -186,8 +199,6 @@ python lstm_forecasting.py
 ### Using LSTM - based deep learning model:
 ### Predicted Australia's Housing Price Index for 2026–2030:
 ![image](https://github.com/user-attachments/assets/b0ea6c19-8642-4a56-acb7-8d45ca3dfa36)
-
-
 
 ---
 
